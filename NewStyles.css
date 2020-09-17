@@ -20,57 +20,97 @@ article{
   text-align: center;
 }
 
+/* .header__menu {
+  display: none;
+} */
+
+.barImage{
+  width: 32px;
+}
+
 /* Section intro */
+.containMyVideo{
+  overflow: hidden;
+}
 .myVideo{
-  width: 100%;
+  /* width: 100%; */
   display:block;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
 }
 .rondell{
-  top: 50%;
-  left: 50%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   position: absolute;
-  transform: translate(-50%, -50%);
-  font-size: 2.5em;
+  font-size: 1.2em;
   color: white;
   font-weight: 500;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
 /* navBarFlex intro */
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+.navBarFlexBox{
+  display: flex;
 }
 
-.home > a{
-  color: indianred;
-
+.myNav{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: large;
 }
+
 #blackBar div:hover{
   color: indianred;
 }
 .navBar > a{
-  color: white;
+  color: #04c2c9;
 }
+
 .navBar > a:hover{
   color: indianred;
 }
-.myNav {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 .navBar {
-  width: 10%;
+  padding: 10px;
+  width: 90%;
   font-weight: 600;
 
 }
 .pushNavText{
-  padding-left: 50px;
-  color: white;
-  margin: auto;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  right: 600px;
   height: 100%;
   align-items: center
+}
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  transition: all 0.3s ease-out;
+}
+.home > a{
+  color: indianred;
+}
+.newFlexBox1{
+  width: 80%;
+}
+.newFlexBox2{
+  width: 12%;
+}
+.header__menu{
+  display: inline-block;
+}
+.bgColor{
+  background-color: #1b242f;
 }
 
 /* About Section */
@@ -84,24 +124,31 @@ article{
   font-weight: bolder;
 }
 .aboutBoxes{
-  width: 25%;
+  width: 50%;
 }
 .describeMyselfBox{
   text-align: center;
-  margin-bottom: 80px
+  margin-bottom: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: large;
+
 }
 .paragraphText{
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 15px;
 }
 .boxes2{
-  width: 50%;
+  width: 100%;
 }
 .skillsAndMe{
-  margin-top: 100px;
+  display: inline-block;
+  margin-top: 0;
 }
 .skillName{
-  width: 20%;
+  width: 35%;
+  font-size: 12px;
   background-color: #04c2c9;
   height: 28px;
 }
@@ -128,21 +175,49 @@ article{
 }
 .spaceBar{
   height: 12.5%;
+  margin-bottom: 13px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
-
+.profilePic{
+  width: 240px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 20%;
+}
+.aboutMeParagraph{
+  padding-right: 0;
+  padding-left: 0;
+}
+.skillsWOne{
+  width: 40%;
+}
+.skillsWTwo{
+  width: 64%;
+}
+.skillsWThree{
+  width: 45.5%;
+}
+.skillsWFour{
+  width: 79.8%;
+}
+.skillsWFive{
+  width: 53.5%;
+}
 /* Projects Section */
 .projects{
-  padding: 50px 0 50px 0;
+  padding: 50px 0 100px 0;
   background-image: linear-gradient(#efefef, white);
 }
 .projectContainer{
   display: flex;
   flex-wrap: wrap;
   margin: auto;
-  width: 60%;
+  width: 100%;
 }
 .imageContainer{
-  width: 33.3%;
+  width: 100%;
 }
 .projectImage{
   width: 100%;
@@ -167,6 +242,9 @@ article{
   padding-bottom: 80px;
 }
 /* Footer Section */
+.contactHeader{
+  padding-top: 65px;
+}
 .socialMediaIcons{
   display: flex;
 }
