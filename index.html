@@ -4,10 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="NewStyles.css">
+  <link rel="stylesheet" href="newStyles.css">
+  <link rel="stylesheet" href="responsive.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,749;0,900;1,600;1,700;1,800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <title>Rondell Jefferson Portfolio</title>
 </head>
 
@@ -17,7 +19,7 @@
     <section id="scrollHome" class="intro">
       <div class="containMyVideo">
         <video class="myVideo" autoplay muted loop>
-          <source type="video/mp4" src="vids/fancyRings.mp4" type="video/mp4">
+          <source src="vids/fancyRings.mp4" type="video/mp4">
         </video>
       </div>
       <div class="rondell">
@@ -27,26 +29,38 @@
       </div>
     </section>
     <nav class="navBarFlexBox" id="test">
-      <div class="myNav pushNavText" id="blackBar">
-        <div class="home navBar" dest="home"><a href="#scrollHome" style="text-decoration: none; color: indianred;">
+      <div class="myNav pushNavText newFlexBox1" id="blackBar">
+        <div class="home navBar bgColor" dest="home"><a href="#scrollHome" style="text-decoration: none;">
             Home
-          </a></div>
-        <div class="About navBar" dest="about"><a href="#scrollAbout" style="text-decoration: none;">
+          </a>
+        </div>
+        <div class="About navBar bgColor" dest="about"><a href="#scrollAbout" style="text-decoration: none;">
             About
-          </a></div>
-        <div class="Portfolio navBar" dest="portfolio"><a href="#scrollPortfolio" style="text-decoration: none;">
+          </a>
+        </div>
+        <div class="Portfolio navBar bgColor" dest="portfolio"><a href="#scrollPortfolio" style="text-decoration: none;">
             Portfolio
-          </a></div>
-        <div class="Contact navBar" dest="contact"><a href="#scrollContact" style="text-decoration: none;">
+          </a>
+        </div>
+        <div class="Contact navBar bgColor" dest="contact"><a href="#scrollContact" style="text-decoration: none;">
             Contact
-          </a></div>
+          </a>
+        </div>
       </div>
+      <div class="navBar header__menu newFlexBox2">
+        <a id="menu" class="menu">
+          <img class="barImage" src="pics/icons8-menu-64.png" alt="">
+        </a>
+      </div>
+      <!-- <a id="menu" class="menu header__menu">
+        <img class="barImage" src="pics/icons8-menu-64.png" alt="">
+      </a> -->
     </nav>
     <!--About-->
     <section id="scrollAbout" class="about" id="about">
       <h1 class="headers" style="text-align: center;">ABOUT</h1>
       <hr>
-      <div class="describeMyselfBox myNav">
+      <div class="describeMyselfBox">
         <div class="aboutBoxes">
           <i class="material-icons" style="font-size:36px">assignment_ind</i>
           <article>
@@ -78,10 +92,10 @@
       </div>
       <div class="skillsAndMe myNav">
         <div class="WhoIsMe boxes2">
-          <img src="pics/RondellPic.jpg" alt="Rondell Jefferson" style="width: 26%; margin-left: auto;margin-right: auto; display: block;border-radius: 20%;">
+          <img class="profilePic" src="pics/RondellPic.jpg" alt="Rondell Jefferson" style="">
           <article class="aboutMe" id="whoAmI">
             <h2 style="color: dimgray;font-weight: bold;">Who am I?</h2>
-            <p style="padding-right: 70px;padding-left:70px;">I'm a Front-end Developer in the Chicago area.
+            <p class="aboutMeParagraph" style="">I'm a Front-end Developer in the Chicago area.
               I have a strong passion for developing responsive websites and web applications with a dynamic user experience.
             </p>
           </article>
@@ -136,7 +150,7 @@
             <div class="skillBar myNav">
               <div class="fullBar" style="width: 100%;">
                 <div class="innerSkillBar" style="width: 80%;">
-                  <div class="skillName" style="width:22.5%">
+                  <div class="skillName skillsWOne" style="">
                     <div class="nameOfSkill">
                       JAVASCRIPT
                     </div>
@@ -150,7 +164,7 @@
             <div class="skillBar myNav">
               <div class="fullBar" style="width: 100%;">
                 <div class="innerSkillBar" style="width: 80%;">
-                  <div class="skillName" style="width:22.5%">
+                  <div class="skillName skillsWOne" style="">
                     <div class="nameOfSkill">
                       JQUERY
                     </div>
@@ -165,7 +179,7 @@
             <div class="skillBar myNav">
               <div class="fullBar" style="width: 100%;">
                 <div class="innerSkillBar" style="width: 50%;">
-                  <div class="skillName" style="width: 36%">
+                  <div class="skillName skillsWTwo" style="">
                     <div class="nameOfSkill">
                       WORDPRESS
                     </div>
@@ -181,7 +195,7 @@
             <div class="skillBar myNav">
               <div class="fullBar" style="width: 100%;">
                 <div class="innerSkillBar" style="width: 70%;">
-                  <div class="skillName" style="width: 25.7%">
+                  <div class="skillName skillsWThree" style="">
                     <div class="nameOfSkill">
                       SQL
                     </div>
@@ -196,9 +210,23 @@
             <div class="skillBar myNav">
               <div class="fullBar" style="width: 100%;">
                 <div class="innerSkillBar" style="width: 40%;">
-                  <div class="skillName" style="width: 45%">
+                  <div class="skillName skillsWFour" style="">
                     <div class="nameOfSkill">
                       PYTHON
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Skill10-->
+          <div class="spaceBar">
+            <div class="skillBar myNav">
+              <div class="fullBar" style="width: 100%;">
+                <div class="innerSkillBar" style="width: 60%;">
+                  <div class="skillName skillsWFive" style="">
+                    <div class="nameOfSkill">
+                      REACT.JS
                     </div>
                   </div>
                 </div>
@@ -246,7 +274,7 @@
           </path>
         </svg>
         <div class="contactContent">
-          <h1 class="headers" id="contactText" style="text-align: center;">CONTACT</h1>
+          <h1 class="headers contactHeader" id="contactText" style="text-align: center;">CONTACT</h1>
           <hr style="border-top: 5px solid white;">
           <div class="haveQuestions">
             <p style="color: #04c2c9;">Have a question or would like to book me for a project?</p>
